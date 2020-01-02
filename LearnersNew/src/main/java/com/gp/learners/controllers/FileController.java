@@ -17,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.amazonaws.services.simpleworkflow.flow.core.TryCatch;
 import com.gp.learners.service.PackageService;
+import com.gp.learners.service.PdfService;
 import com.gp.learners.service.S3Service;
 import com.gp.learners.service.UserService;
 
@@ -35,6 +36,8 @@ public class FileController {
 	@Autowired
 	PackageService packageService;
     
+	@Autowired
+	PdfService pdfService;
 	/*
      * Download Files
      * type --> 1 = UserProfileImage
